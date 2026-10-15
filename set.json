@@ -1,0 +1,8 @@
+{
+  "ACTION": "set",
+  "id": "registro_test",
+  "data": {
+    "nombre": "Empresa Demo",
+    "telefono": "111222333"
+  }
+}
