@@ -1,8 +1,16 @@
 {
+  "UUID": "1234567890",
+  "ID": "UADER-FCYT-IS2",
   "ACTION": "set",
-  "id": "registro_test",
-  "data": {
-    "nombre": "Empresa Demo",
-    "telefono": "111222333"
-  }
+  "cp": "3260",
+  "CUIT": "30-70925411-8",
+  "domicilio": "25 de Mayo 385-1P",
+  "idreq": "473",
+  "idSeq": "1146",
+  "localidad": "Concepción del Uruguay",
+  "provincia": "Entre Rios",
+  "sede": "FCyT",
+  "seqID": "23",
+  "telefono": "03442 43-1442",
+  "web": "http://www.uader.edu.ar"
 }

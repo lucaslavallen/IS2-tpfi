@@ -1,0 +1,19 @@
+{
+  "ACTION": "update",
+  "id": "UADER-FCYT-IS2",
+  "data": {
+    "CUIT": "30-70925411-8",
+    "domicilio": "25 de Mayo 385-1P",
+    "id": "UADER-FCYT-IS2",
+    "idSeq": "1146",
+    "localidad": "Concepción del Uruguay",
+    "provincia": "Entre Rios",
+    "sede": "FCyT",
+    "seqID": "23",
+    "telefono": "03442 43-1442",
+    "web": "http://www.uader.edu.ar",
+    "idreq": "473",
+    "cp": "3260",
+    "ID": "UADER-FCYT-IS2"
+  }
+}

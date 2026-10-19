@@ -1,1 +1,4 @@
-{"ACTION": "get", "id": "registro_test"}
+{
+  "id": "UADER-FCYT-IS2",
+  "ACTION": "get"
+}

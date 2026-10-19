@@ -1,19 +1,20 @@
-{
+[
+  {
   "ACTION": "update",
   "id": "registro_test",
   "data": {
     "nombre": "Empresa Demo",
     "telefono": "111222333"
   }
-}
+},
 {
   "ACTION": "update",
-  "id": "registro_test",
+  "id": "registrst",
   "data": {
     "nombre": "Empresa Demo",
-    "telefono": "111222333"
+    "telefono": "22333"
   }
-}
+},
 {
   "ACTION": "update",
   "id": "PRUEBA-01",
@@ -21,7 +22,7 @@
     "telefono": "111",
     "localidad": "Concepcion del Uruguay"
   }
-}
+},
 {
   "ACTION": "update",
   "id": "TEST-02",
@@ -29,7 +30,7 @@
     "telefono": "3442 094011",
     "localidad": "caseros"
   }
-}
+},
 {
   "ACTION": "update",
   "id": "HOla",
@@ -37,7 +38,7 @@
     "telefono": "3442 094011",
     "localidad": "Gualeguay"
   }
-}
+},
 {
   "ACTION": "update",
   "id": "lucas",
@@ -46,4 +47,14 @@
     "localidad": "Gualeguaychu, Entre Ríos",
     "sede": "FCYT"
   }
+},
+{
+  "ACTION": "update",
+  "id": "registro_test",
+  "data": {
+    "id": "registro_test",
+    "nombre": "Empresa Demo",
+    "telefono": "111222333"
+  }
 }
+]

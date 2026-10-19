@@ -3,6 +3,30 @@ import json, socket, argparse, uuid, logging, os
 DEFAULT_HOST = "127.0.0.1"
 DEFAULT_PORT = 8080
 
+
+def normalize_request(req):
+    """Adapta los archivos set con campos planos al formato del servidor."""
+    if req.get("ACTION") != "set":
+        return req
+
+    normalized = dict(req)
+    if "id" not in normalized and "ID" in normalized:
+        normalized["id"] = normalized["ID"]
+
+    if "data" not in normalized:
+        metadata = {"ACTION", "UUID", "ID", "id"}
+        data = {key: value for key, value in normalized.items() if key not in metadata}
+        if data:
+            normalized = {
+                key: value
+                for key, value in normalized.items()
+                if key in metadata
+            }
+            normalized["data"] = data
+
+    return normalized
+
+
 def cpu_uuid():
     return str(uuid.UUID(int=uuid.getnode()))
 
@@ -35,6 +59,11 @@ def main():
         logging.error("El archivo de entrada no contiene un JSON válido.")
         return
     
+    if not isinstance(req, dict):
+        logging.error("El archivo de entrada debe contener un objeto JSON.")
+        return
+
+    req = normalize_request(req)
     req.setdefault("UUID", cpu_uuid())
 
     try:
