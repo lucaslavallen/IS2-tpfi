@@ -34,7 +34,6 @@ def proxy():
     )
     return DynamoProxy(db)
 
-
 def test_get_registro_existente(proxy):
     result = proxy.get("A1")
     assert result["nombre"] == "Ana"

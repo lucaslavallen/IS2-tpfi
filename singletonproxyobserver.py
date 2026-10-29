@@ -31,8 +31,7 @@ class DynamoSingleton:
 class CorporateDataIterator:
     """Patrón Iterator: recorre los registros de CorporateData de a uno.
 
-    Oculta al proxy cómo se almacenan los datos (dict en memoria o tabla
-    DynamoDB con paginación vía LastEvaluatedKey).
+    Oculta al proxy cómo se almacenan los datos.
     """
 
     def __init__(self, corporate_data):
