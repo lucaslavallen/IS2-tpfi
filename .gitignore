@@ -1,5 +1,5 @@
 .env
-.pytest_cache
+__pycache__
 .coverage
 .venv
 .gitignore
